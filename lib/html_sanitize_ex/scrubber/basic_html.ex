@@ -32,6 +32,9 @@ defmodule HtmlSanitizeEx.Scrubber.BasicHTML do
   Meta.allow_tag_with_these_attributes "h5", []
   Meta.allow_tag_with_these_attributes "hr", []
   Meta.allow_tag_with_these_attributes "i", []
+  Meta.allow_tag_with_these_attributes "div", []
+  Meta.allow_tag_with_these_attributes "header", []
+  Meta.allow_tag_with_these_attributes "body", []
 
   Meta.allow_tag_with_uri_attributes   "img", ["src"], @valid_schemes
   Meta.allow_tag_with_these_attributes "img", ["width", "height", "title", "alt"]
